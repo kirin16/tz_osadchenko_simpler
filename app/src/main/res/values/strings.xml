@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">tz_osadchenko_simpler</string>
+
+    <string name="set_bet">Enter your bet!</string>
+    <string name="set_start_value">Current balance:%1$d</string>
+    <string name="get_value_text">Current balance:</string>
+    <string name="enter_valid_value">Enter a value between 5 and %1$d</string>
+    <string name="str_spin">SPIN</string>
+    <string name="str_try_again">Try again!</string>
+    <string name="msg_try_again">You lost all your points, try again!</string>
+    <string name="you_lose">You lose!</string>
+    <string name="you_won">You won!</string>
+    <string name="jackpot">Congratulations! You just won %1$d points!</string>
+
+</resources>
