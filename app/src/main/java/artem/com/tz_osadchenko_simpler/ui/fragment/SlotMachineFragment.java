@@ -111,14 +111,12 @@ public class SlotMachineFragment extends Fragment {
 
         boolean isBetCorrespond = false;
         String strBet = String.valueOf(etBet.getText());
-        String[] separated = String.valueOf(tvBalance.getText()).split(":");
-        int currentBalance = Integer.parseInt(separated[1]);
 
         if (!strBet.equals("")){
 
             int bet =  Integer.parseInt(strBet);
 
-            if (bet >= 5 && bet <= currentBalance) {
+            if (bet >= 5 && bet <= mBalance) {
                 ivFirstSlot.setImageResource(R.drawable.question);
                 ivSecondSLot.setImageResource(R.drawable.question);
                 ivThirdSlot.setImageResource(R.drawable.question);
@@ -133,8 +131,8 @@ public class SlotMachineFragment extends Fragment {
     /**
      * The method handles animations for
      * @param x - first imageView
-     * @param y- second imageView
-     * @param z- third imageView
+     * @param y - second imageView
+     * @param z - third imageView
      */
 
     private void handleImageAnimation(ImageView x, ImageView y, ImageView z) {
@@ -292,4 +290,5 @@ public class SlotMachineFragment extends Fragment {
         super.onStop();
         saveBalance();
     }
+
 }
